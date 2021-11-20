@@ -1,0 +1,65 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Taken from: http://dev.gojko.net/web/2015/09/19/material-design-progress-pure-css.html */
+.progress,
+.progress:before {
+  height: 0.5rem;
+}
+
+.progress:before {
+  width: 100%;
+}
+
+.progress {
+  background-color: rgb(219, 234, 254);
+  display: flex;
+}
+
+.progress:before {
+  background-color: rgb(147, 197, 253);
+  content: '';
+  animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes running-progress {
+  0% {
+    margin-left: 0px;
+    margin-right: 100%;
+  }
+
+  50% {
+    margin-left: 25%;
+    margin-right: 0%;
+  }
+
+  100% {
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Custom */
+.form-box {
+  height: fit-content;
+}
+
+.pagination[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.pagination[disabled]:hover {
+  background: rgb(147, 197, 253);
+}
+
+.embed {
+  padding-top: 56.25%;
+}
+
+.embed iframe {
+  border: 0;
+}

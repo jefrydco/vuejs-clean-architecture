@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z Index</title>
+  <style>
+    .main {
+      display: flex;
+    }
+    .with-z-index {
+      margin-left: 50px;
+    }
+    .box {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      position: relative;
+    }
+    .box--red {
+      background-color: rgb(219, 68, 55);
+    }
+    .box--yellow {
+      background-color: rgb(244, 180, 0);
+      margin-left: 50px;
+      margin-top: -250px;
+    }
+    .box--blue {
+      background-color: rgb(66, 133, 244);
+      margin-left: 100px;
+      margin-top: -250px;
+    }
+    .with-z-index .box--yellow {
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main">
+    <div class="without-z-index">
+      <div class="box box--red"></div>
+      <div class="box box--yellow"></div>
+      <div class="box box--blue"></div>
+    </div>
+    <div class="with-z-index">
+      <div class="box box--red"></div>
+      <div class="box box--yellow"></div>
+      <div class="box box--blue"></div>
+    </div>
+  </main>
+</body>
+
+</html>

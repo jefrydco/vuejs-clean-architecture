@@ -1,0 +1,17 @@
+{
+  "name": "04-not-tree-shaking-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c rollup.config.ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "rollup": "^2.60.0"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

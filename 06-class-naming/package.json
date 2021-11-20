@@ -1,0 +1,12 @@
+{
+  "name": "06-class-naming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "serve ./src"
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
+  }
+}
